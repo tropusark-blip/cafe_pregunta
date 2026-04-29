@@ -20,7 +20,7 @@ def main(page: ft.Page):
         page.update()
 
     def mostrar_respuesta(e):
-        mensaje.value = "Tenia el presentimiento que dirias que si jsjs"
+        mensaje.value = "Tenía el presentimiento que dirías que sí jsjs"
         page.update()
 
     btn_si = ft.Button(
@@ -31,7 +31,8 @@ def main(page: ft.Page):
 
     btn_no = ft.Button(
         "No",
-        on_hover=mover_boton_no,
+        on_hover=mover_boton_no,   # PC
+        on_click=mover_boton_no,   # CELULAR 🔥
         width=100
     )
 
